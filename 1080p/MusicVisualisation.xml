@@ -191,6 +191,16 @@
 							<height>32</height>
 							<texture fallback="ratings/0.png">$INFO[MusicPlayer.UserRating,ratings/,.png]</texture>
 						</control>
+						<control type="label">
+							<description>Bitrate label</description>
+							<left>265</left>
+							<top>8</top>
+							<width>250</width>
+							<height>29</height>
+							<font>font12</font>
+							<label>$INFO[MusicPlayer.SampleRate] KHz/$INFO[MusicPlayer.BitRate] kbps</label>
+							<textcolor>grey2</textcolor>
+						</control>
 					</control>
 				</control>
 				<control type="label">
