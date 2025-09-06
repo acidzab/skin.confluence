@@ -9,6 +9,7 @@
 	<include file="ViewsLiveTV.xml" />
 	<include file="ViewsPVRGuide.xml" />
 	<include file="ViewsWeather.xml" />
+	<include file="Viewtype_ThumbnailViewExtra.xml" />
 	<include file="IncludesDialogSelect.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesGames.xml" />
