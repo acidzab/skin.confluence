@@ -3,6 +3,17 @@
 	<defaultcontrol/>
 	<onload condition="!Skin.HasSetting(HideVisualizationFanart) + System.AddonIsEnabled(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
 	<controls>
+		<!-- Sfondo con copertina del brano -->
+		<control type="image">
+			<description>Album Cover Background</description>
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<aspectratio>scale</aspectratio>
+			<texture background="true">$INFO[Player.Art(thumb)]</texture>
+			<colordiffuse>AAFFFFFF</colordiffuse>
+		</control>
 		<control type="visualisation" id="2">
 			<!-- FIX ME Music Visualization needs to have an id of 2 in this window to be able to lock or change preset -->
 			<description>visualisation</description>
@@ -106,10 +117,10 @@
 			<control type="image">
 				<depth>DepthOSDPopout</depth>
 				<description>cover image</description>
-				<left>30</left>
-				<top>375r</top>
-				<width>450</width>
-				<height>345</height>
+				<left>1</left>
+				<top>515r</top>
+				<width>480</width>
+				<height>505</height>
 				<texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture infill="false" border="8">ThumbShadow.png</bordertexture>
