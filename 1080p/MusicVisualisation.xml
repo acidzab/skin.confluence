@@ -10,7 +10,7 @@
 			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
-			<aspectratio>scale</aspectratio>
+			<aspectratio>keep</aspectratio>
 			<texture background="true">$INFO[Player.Art(thumb)]</texture>
 		</control>
 		<control type="visualisation" id="2">

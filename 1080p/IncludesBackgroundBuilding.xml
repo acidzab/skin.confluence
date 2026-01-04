@@ -28,6 +28,15 @@
 			<visible>System.IsMaster + Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(MasterCustomBackgroundPath))</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
+		<!-- Sfondo con copertina del brano -->
+		<control type="image">
+			<description>Album Cover Background</description>
+			<include>BackgroundDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture background="true" colordiffuse="FFCCCCCC">$INFO[Player.Art(thumb)]</texture>
+			<visible>Player.HasAudio</visible>
+			<include>VisibleFadeEffect</include>
+		</control>
 		<control type="image">
 			<depth>DepthBackground</depth>
 			<include>BackgroundDimensions</include>
