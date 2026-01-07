@@ -33,7 +33,7 @@
 			<description>Album Cover Background</description>
 			<include>BackgroundDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<texture background="true" colordiffuse="FFCCCCCC">$INFO[Player.Art(thumb)]</texture>
+			<texture background="true" colordiffuse="FF909090">$INFO[Player.Art(thumb)]</texture>
 			<visible>Player.HasAudio</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
