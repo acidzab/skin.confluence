@@ -117,9 +117,9 @@
 				<depth>DepthOSDPopout</depth>
 				<description>cover image</description>
 				<left>30</left>
-				<top>375r</top>
-				<width>450</width>
-				<height>345</height>
+				<top>435r</top>
+				<width>416</width>
+				<height>416</height>
 				<texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture infill="false" border="8">ThumbShadow.png</bordertexture>
