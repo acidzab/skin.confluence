@@ -153,10 +153,10 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<left>12</left>
+					<left>15</left>
 					<top>30</top>
-					<width>440</width>
-					<height>440</height>
+					<width>416</width>
+					<height>416</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture fallback="DefaultAlbumCover.png" background="true">$VAR[MusicInfoListViewThumb]</texture>

@@ -101,15 +101,15 @@
 			</control>
 			<control type="group">
 				<depth>DepthContent</depth>
-				<left>1158</left>
+				<left>1180</left>
 				<top>180</top>
 				<visible>Control.IsVisible(501)</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>700</width>
-					<height>700</height>
-					<aspectratio aligny="center">keep</aspectratio>
+					<width>660</width>
+					<height>660</height>
+					<aspectratio>keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 					<bordertexture infill="false" border="8">ThumbShadow.png</bordertexture>
