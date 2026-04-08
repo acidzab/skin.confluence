@@ -11,6 +11,7 @@
 			<width>1920</width>
 			<height>1080</height>
 			<aspectratio>keep</aspectratio>
+			<visible>!Visualisation.Enabled</visible>
 			<texture background="true">$INFO[Player.Art(thumb)]</texture>
 		</control>
 		<control type="visualisation" id="2">
