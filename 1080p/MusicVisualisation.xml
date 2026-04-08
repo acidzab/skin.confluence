@@ -116,7 +116,7 @@
 			<control type="image">
 				<depth>DepthOSDPopout</depth>
 				<description>cover image</description>
-				<left>30</left>
+				<left>45</left>
 				<top>375r</top>
 				<width>361</width>
 				<height>361</height>

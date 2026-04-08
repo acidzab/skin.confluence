@@ -153,7 +153,7 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<left>15</left>
+					<left>25</left>
 					<top>30</top>
 					<width>416</width>
 					<height>416</height>

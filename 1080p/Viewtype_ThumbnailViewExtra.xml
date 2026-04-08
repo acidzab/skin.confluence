@@ -101,7 +101,7 @@
 			</control>
 			<control type="group">
 				<depth>DepthContent</depth>
-				<left>1180</left>
+				<left>1181</left>
 				<top>180</top>
 				<visible>Control.IsVisible(501)</visible>
 				<control type="image">
