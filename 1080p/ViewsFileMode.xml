@@ -247,10 +247,10 @@
 				<preloaditems>2</preloaditems>
 				<itemlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(TVShows) + !Container.Content(Sets)" height="279" width="324">
 					<control type="image">
-						<left>1</left>
-						<top>0</top>
-						<width>321</width>
-						<height>240</height>
+						<left>-9</left>
+						<top>20</top>
+						<width>338</width>
+						<height>220</height>
 						<bordertexture infill="false" border="5">button-nofocus.png</bordertexture>
 						<bordersize>5</bordersize>
 						<texture background="true">$VAR[PosterThumb]</texture>
@@ -258,10 +258,10 @@
 						<visible>!Container.Content(Episodes)</visible>
 					</control>
 					<control type="image">
-						<left>1</left>
-						<top>0</top>
-						<width>321</width>
-						<height>240</height>
+						<left>-9</left>
+						<top>20</top>
+						<width>338</width>
+						<height>220</height>
 						<aspectratio>scale</aspectratio>
 						<bordertexture infill="false" border="5">button-nofocus.png</bordertexture>
 						<bordersize>5</bordersize>
@@ -291,10 +291,10 @@
 				</itemlayout>
 				<focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(TVShows) + !Container.Content(Sets)" height="279" width="324">
 					<control type="image">
-						<left>1</left>
-						<top>0</top>
-						<width>321</width>
-						<height>240</height>
+						<left>-9</left>
+						<top>20</top>
+						<width>338</width>
+						<height>220</height>
 						<bordertexture infill="false" border="5">folder-focus.png</bordertexture>
 						<bordersize>5</bordersize>
 						<texture background="true">$VAR[PosterThumb]</texture>
@@ -302,10 +302,10 @@
 						<visible>!Container.Content(Episodes)</visible>
 					</control>
 					<control type="image">
-						<left>1</left>
-						<top>0</top>
-						<width>321</width>
-						<height>240</height>
+						<left>-9</left>
+						<top>20</top>
+						<width>338</width>
+						<height>220</height>
 						<aspectratio>scale</aspectratio>
 						<bordertexture infill="false" border="5">folder-focus.png</bordertexture>
 						<bordersize>5</bordersize>
