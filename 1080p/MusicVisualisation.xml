@@ -261,8 +261,7 @@
 					<font>font12</font>
 					<textcolor>grey</textcolor>
 					<scroll>true</scroll>
-					<visible>MusicPlayer.HasNext + !Window.IsVisible(MusicOSD)</visible>
-					<animation effect="fade" time="150">VisibleChange</animation>
+					<visible>MusicPlayer.HasNext</visible>
 				</control>
 			</control>
 			<control type="group">
