@@ -153,10 +153,10 @@
 					<textcolor>white</textcolor>
 				</control>
 				<control type="image">
-					<left>25</left>
+					<left>15</left>
 					<top>30</top>
-					<width>416</width>
-					<height>416</height>
+					<width>435</width>
+					<height>435</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture fallback="DefaultAlbumCover.png" background="true">$VAR[MusicInfoListViewThumb]</texture>
@@ -676,7 +676,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(512)</visible>
 			<include>VisibleFadeEffect</include>
-			<control type="panel" id="512">
+			<control type="list" id="512">
 				<left>105</left>
 				<top>117</top>
 				<width>870</width>
@@ -689,50 +689,71 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<visible>Container.Content(Artists)</visible>
-				<itemlayout height="300" width="265">
+				<itemlayout height="60" width="870">
 					<control type="image">
-						<left>48</left>
-						<top>20</top>
-						<width>236</width>
-						<height>200</height>
-						<bordertexture infill="false" border="5">button-nofocus.png</bordertexture>
-						<bordersize>5</bordersize>
-						<texture background="true">$INFO[Listitem.Icon]</texture>
+						<left>0</left>
+						<top>0</top>
+						<width>870</width>
+						<height>62</height>
+						<texture border="0,2,0,2">MenuItemNF.png</texture>
+					</control>
+					<control type="image">
+						<left>15</left>
+						<top>6</top>
+						<width>60</width>
+						<height>48</height>
+						<texture background="true">$VAR[PosterThumb]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<left>67</left>
-						<top>220</top>
-						<width>200</width>
-						<height>38</height>
-						<font>font12</font>
+						<left>90</left>
+						<top>0</top>
+						<width>840</width>
+						<height>60</height>
+						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
-						<align>center</align>
+						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="300" width="265">
+				<focusedlayout height="60" width="870">
 					<control type="image">
-						<left>48</left>
-						<top>20</top>
-						<width>236</width>
-						<height>200</height>
-						<bordertexture infill="false" border="5">folder-focus.png</bordertexture>
-						<bordersize>5</bordersize>
-						<texture background="true">$INFO[Listitem.Icon]</texture>
+						<left>0</left>
+						<top>0</top>
+						<width>870</width>
+						<height>62</height>
+						<texture border="0,2,0,2">MenuItemNF.png</texture>
+						<visible>!Control.HasFocus(512)</visible>
+						<include>VisibleFadeEffect</include>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>870</width>
+						<height>62</height>
+						<texture border="0,2,0,2">MenuItemFO.png</texture>
+						<visible>Control.HasFocus(512)</visible>
+						<include>VisibleFadeEffect</include>
+					</control>
+					<control type="image">
+						<left>15</left>
+						<top>6</top>
+						<width>60</width>
+						<height>48</height>
+						<texture background="true">$VAR[PosterThumb]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<left>67</left>
-						<top>220</top>
-						<width>200</width>
-						<height>38</height>
-						<font>font12</font>
+						<left>90</left>
+						<top>0</top>
+						<width>840</width>
+						<height>60</height>
+						<font>font13</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
-						<align>center</align>
+						<align>left</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
@@ -774,7 +795,7 @@
 						<description>Born txt</description>
 						<left>0</left>
 						<top>0</top>
-						<width>250</width>
+						<width>210</width>
 						<height>38</height>
 						<label>$LOCALIZE[21893]:</label>
 						<align>right</align>
@@ -785,9 +806,9 @@
 					</control>
 					<control type="label">
 						<description>Born Value</description>
-						<left>265</left>
+						<left>225</left>
 						<top>0</top>
-						<width>455</width>
+						<width>525</width>
 						<height>38</height>
 						<label>$INFO[ListItem.Property(Artist_Born)]</label>
 						<align>left</align>
@@ -800,7 +821,7 @@
 						<description>Formed txt</description>
 						<left>0</left>
 						<top>0</top>
-						<width>250</width>
+						<width>210</width>
 						<height>38</height>
 						<label>$LOCALIZE[21894]:</label>
 						<align>right</align>
@@ -811,9 +832,9 @@
 					</control>
 					<control type="label">
 						<description>Formed Value</description>
-						<left>265</left>
+						<left>225</left>
 						<top>0</top>
-						<width>455</width>
+						<width>525</width>
 						<height>38</height>
 						<label>$INFO[ListItem.Property(Artist_Formed)]</label>
 						<align>left</align>
@@ -825,8 +846,8 @@
 					<control type="label">
 						<description>Genre txt</description>
 						<left>0</left>
-						<top>25</top>
-						<width>220</width>
+						<top>45</top>
+						<width>210</width>
 						<height>38</height>
 						<label>$LOCALIZE[515]:</label>
 						<align>right</align>
@@ -836,9 +857,9 @@
 					</control>
 					<control type="label">
 						<description>Genre Value</description>
-						<left>230</left>
-						<top>25</top>
-						<width>455</width>
+						<left>225</left>
+						<top>45</top>
+						<width>525</width>
 						<height>38</height>
 						<label fallback="10005">$INFO[ListItem.Property(Artist_Genre)]</label>
 						<align>left</align>
