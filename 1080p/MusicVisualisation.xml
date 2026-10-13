@@ -216,27 +216,6 @@
 						<param name="flag_visible" value="!String.IsEmpty(MusicPlayer.BMP)"/>
 						<param name="flag_label" value="$INFO[MusicPlayer.BMP,,bpm]"/>
 					</include>
-					<control type="group">
-						<description>Rating</description>
-						<width>258</width>
-						<height>39</height>
-						<control type="image">
-							<description>rating back</description>
-							<left>0</left>
-							<top>0</top>
-							<width>258</width>
-							<height>39</height>
-							<texture border="5">flagging/blank.png</texture>
-						</control>
-						<control type="image">
-							<description>User Rating</description>
-							<left>3</left>
-							<top>4</top>
-							<width>252</width>
-							<height>32</height>
-							<texture fallback="ratings/0.png">$INFO[MusicPlayer.UserRating,ratings/,.png]</texture>
-						</control>
-					</control>
 				</control>
 				<control type="label">
 					<left>0</left>
