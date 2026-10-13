@@ -114,20 +114,8 @@
 				<height>345</height>
 				<texture border="1">HomeNowPlayingBack.png</texture>
 			</control>
-			<control type="image">
-				<depth>DepthOSDPopout</depth>
-				<description>cover image</description>
-				<left>45</left>
-				<top>375r</top>
-				<width>361</width>
-				<height>361</height>
-				<texture fallback="DefaultAlbumCover.png">$INFO[Player.Art(thumb)]</texture>
-				<aspectratio aligny="bottom">keep</aspectratio>
-				<bordertexture infill="false" border="8">ThumbShadow.png</bordertexture>
-				<bordersize>8</bordersize>
-			</control>
 			<control type="group">
-				<left>495</left>
+				<left>270</left>
 				<top>345r</top>
 				<control type="label" id="1">
 					<description>Heading label</description>
@@ -265,7 +253,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>495</left>
+				<left>270</left>
 				<top>143r</top>
 				<control type="label">
 					<left>0</left>

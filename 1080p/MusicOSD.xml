@@ -28,7 +28,7 @@
 		<control type="slider" id="87">
 			<depth>DepthOSD+</depth>
 			<description>Seek Slider</description>
-			<left>645</left>
+			<left>420</left>
 			<top>123r</top>
 			<width>1080</width>
 			<height>24</height>
@@ -42,8 +42,10 @@
 			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVRChannelGuide) | Window.IsVisible(PVRRadioRDSInfo) | Window.IsVisible(Addon)]</visible>
 		</control>
 		<control type="grouplist" id="100">
-			<left>488</left>
+			<left>0</left>
 			<top>90r</top>
+			<width>1920</width>
+			<align>center</align>
 			<orientation>horizontal</orientation>
 			<itemgap>0</itemgap>
 			<animation effect="fade" time="150">VisibleChange</animation>
